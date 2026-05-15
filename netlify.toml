@@ -1,0 +1,13 @@
+# Netlify configuration for detour.guru
+
+[build]
+  # No build step needed for static HTML
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+  conditions = {Role = ["anonymous"]}
