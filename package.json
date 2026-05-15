@@ -1,0 +1,9 @@
+{
+  "name": "detour-guru",
+  "version": "1.0.0",
+  "description": "Real stories. Local stops. Better detours.",
+  "private": true,
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  }
+}
