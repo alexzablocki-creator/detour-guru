@@ -37,7 +37,7 @@ h1 .y{color:var(--yellow)}
 
 .skip-col{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;position:relative}
 .skip-wrap{position:relative;display:flex;flex-direction:column;align-items:center}
-.skip-img{width:100%;max-width:400px;display:block}
+.skip-video{width:100%;max-width:400px;display:block}
 .bubble{position:absolute;top:30px;right:-5px;background:var(--yellow);border:2.5px solid var(--black);border-radius:14px 14px 14px 0;padding:.85rem 1.1rem;max-width:200px;font-size:.8rem;font-style:italic;line-height:1.5;color:var(--black);font-weight:600;box-shadow:3px 3px 0 var(--black);z-index:2}
 .bubble::after{content:'';position:absolute;bottom:-14px;left:14px;border:7px solid transparent;border-top-color:var(--black);border-left-color:var(--black)}
 .cities{display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap;margin-top:.5rem}
@@ -134,7 +134,10 @@ footer{background:var(--black);padding:3rem;text-align:center}
   <div class="skip-col">
     <div class="skip-wrap">
       <div class="bubble" id="bub">"I don't take you where everyone goes. I take you where the city lives."</div>
-      <img class="skip-img" src="skip.png" alt="Skip the Guru">
+      <video class="skip-video" autoplay loop muted playsinline>
+        <source src="skip.mp4" type="video/mp4">
+        <img src="skip.png" alt="Skip the Guru">
+      </video>
     </div>
     <div class="cities">
       <button class="ctag active" onclick="setCity(this,'I don\'t take you where everyone goes. I take you where the city lives.','Flat cap · Checkered vest · Pencil behind ear')">NYC</button>
